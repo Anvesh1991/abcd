@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>abcd</groupId>
+  <artifactId>abcd</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+<dependencies>			
+        <dependency>				
+             <groupId>junit</groupId>								
+             <artifactId>junit</artifactId>								
+             <version>3.8.1</version>								
+             <scope>test</scope>								
+        </dependency>				
+        <dependency>				
+            <groupId>org.seleniumhq.selenium</groupId>								
+            <artifactId>selenium-java</artifactId>								
+            <version>2.45.0</version>								
+		</dependency>				
+        <dependency>				
+            <groupId>org.testng</groupId>								
+            <artifactId>testng</artifactId>								
+            <version>6.8</version>								
+            <scope>test</scope>							  			
+       </dependency>				
+       </dependencies> </project>
+17 <plugins>
+18 <plugin>
+19 <groupid>org.apache .maven .plugins</groupid>
+20 <artifactid>maven-compiler-plugin</artifactld>
+21 <version>2.3.2</version>
+22 <configuration>
+23 <source>l .7</source>
+24 <target>l.7</target>
+25 </confiquration>
+26 </plugin>
+27 <plugin>
+28 <groupid>org .apache .maven .plugins</groupid>
+29 <artifactid>maven-surefire-plugin</artifactid>
+30 <version>2.12</version>
+31 <inberited>true</inherited>
+32 <configuration>
+33 <suiteXmlFiles>
+34 <suiteXmlFile>testng.xml.</suiteXmlFile>
+35 </suiteXmlFiles>
+36 </configuration>
+37 </plugin>
+38 </plugins>
